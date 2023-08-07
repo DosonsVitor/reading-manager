@@ -28,11 +28,11 @@ class Book{
 
   Book.fromJson(Map<String, dynamic> json) {
     _id = Uuid.parse(json['id']) as Uuid;
-    _name = json['nome'];
-    _author = json['autor'];
-    _description = json['sinopse'];
-    _pages = json['paginas'];
-    _pagesRead = json['paginas_lidas'];
+    _name = json['name'];
+    _author = json['author'];
+    _description = json['description'];
+    _pages = json['pages'];
+    _pagesRead = json['pages_read'];
     _status = json['status_id'];
   }
 
@@ -40,11 +40,11 @@ class Book{
     final Map<String, dynamic> data = <String, dynamic>{};
 
     data['id'] = _id.v4().toString();
-    data['nome'] = _name;
-    data['autor'] = _author;
-    data['sinopse'] = _description;
-    data['paginas'] = _pages;
-    data['paginas_lidas'] = _pagesRead;
+    data['name'] = _name;
+    data['author'] = _author;
+    data['description'] = _description;
+    data['pages'] = _pages;
+    data['pages_read'] = _pagesRead;
     data['status_id'] = _status;
 
     return data;
@@ -56,5 +56,19 @@ class Book{
     _description = book.info.description;
     _pages = book.info.pageCount;
   }
+
+  String get id => _id.v4().toString();
+
+  String get name => _name;
+
+  String get author => _author;
+
+  String get description => _description;
+
+  int get pages => _pages;
+
+  int get pagesRead => _pagesRead;
+
+  int get status => _status;
 }
 
