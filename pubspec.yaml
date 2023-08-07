@@ -33,6 +33,9 @@ dependencies:
 
   uuid:
 
+  sqflite:
+  path:
+
   books_finder: ^4.3.0
 
 
