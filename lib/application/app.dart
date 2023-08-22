@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reading_manager/ui/pages/initial_page.dart';
-import 'package:reading_manager/ui/style.dart';
+import 'package:reading_manager/application/ui/pages/initial_page.dart';
+import 'package:reading_manager/application/ui/style.dart';
 
 class App extends StatelessWidget{
   const App({super.key});

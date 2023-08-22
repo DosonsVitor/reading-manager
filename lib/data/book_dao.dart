@@ -1,7 +1,6 @@
 import 'package:sqflite/sqflite.dart';
-
-import '../domain/book.dart';
-import 'db_helper.dart';
+import '../domain/entities/book.dart';
+import 'service/db_helper.dart';
 
 class BookDao {
 

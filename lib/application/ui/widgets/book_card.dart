@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:group_button/group_button.dart';
 import 'package:input_quantity/input_quantity.dart';
-import 'package:reading_manager/domain/book.dart';
+import 'package:reading_manager/domain/entities/book.dart';
 
 class BookCard extends StatefulWidget{
   final Book book;
